@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Of Life</title>
+    <style>
+        .game{
+            border: 1px solid;
+            display: inline-block;
+        }
+            .row {
+                display: flex;
+            }
+                .cell {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #2c2c2c;
+                }
+                .alive {
+                    background-color: #000;
+                }
+                .died {
+                    background-color: #a5a5a5;
+                }
+        .controls {
+            display: flex;
+        }
+            .counter {
+                padding: 0 20px;
+            }
+    </style>
+</head>
+<body>
+    <div class="game" id="game"></div>
+    <div class="controls">
+        <select id="fieldSize">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option selected value="25">25</option>
+        </select>
+        <button id="startButton">Start game</button>
+        <button id="resetButton">Reset game</button>
+        <div id="counter" class="counter"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
