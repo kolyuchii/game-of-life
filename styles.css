@@ -1,0 +1,24 @@
+.game{
+    border: 1px solid;
+    display: inline-block;
+}
+    .row {
+        display: flex;
+    }
+        .cell {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #2c2c2c;
+        }
+        .alive {
+            background-color: #000;
+        }
+        .died {
+            background-color: #a5a5a5;
+        }
+.controls {
+    display: flex;
+}
+    .counter {
+        padding: 0 20px;
+    }
